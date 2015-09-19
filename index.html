@@ -19,8 +19,8 @@ $(function () {
                         }
                         table.append(row);
                     }
-                    $("#dvCSV").html('');
-                    $("#dvCSV").append(table);
+                    $("#editor").html('');
+                    $("#editor").append(table);
                 }
                 reader.readAsText($("#fileUpload")[0].files[0]);
             } else {
@@ -32,8 +32,9 @@ $(function () {
     });
 });
 </script>
+<div id="editor">
 <input type="file" id="fileUpload" />
 <input type="button" id="upload" value="Upload" />
 <hr />
-<div id="dvCSV">
+
 </div>
